@@ -48,7 +48,7 @@ body, html {
   flex-direction: row;
   justify-content: flex-end;
   margin-bottom: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .map-wrapper, .list-wrapper, .saved-wrapper {
@@ -64,6 +64,7 @@ body, html {
 .map-icon, .list-icon, .saved-icon {
   height: 20px;
   width: auto;
+  cursor: pointer;
 }
 
 .map, .list, .saved {
@@ -71,6 +72,7 @@ body, html {
   margin-right: 25px;
   margin-bottom: 0px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 /* right nav */
@@ -86,27 +88,29 @@ body, html {
   flex-direction: column;
   justify-content: right;
   margin-bottom: 10px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .username-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-top: 10px;
-  margin-right: 10px;
+  margin-top: 15px;
+  margin-right: 15px;
   height: min-content;
 }
 
 .user-icon  {
   height: 20px;
   width: auto;
+  cursor: pointer;
 }
 
 .username {
   margin-top: 0px;
   margin-left: 10px;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .triangle-icon {
@@ -114,13 +118,15 @@ body, html {
   width: auto;
   margin-top: 4px;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .logo-image {
   width: 250px;
   height: auto;
   margin-bottom: 0px;
-  margin-right: 10px;
+  margin-right: 5px;
+  cursor: pointer;
 }
 
 /* display */
@@ -134,38 +140,85 @@ body, html {
 .sights-header  {
   margin-left: 10px;
   font-size: 30px;
+  cursor: pointer;
 }
 
+/* cards grid */
 .card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   grid-gap: 15px;
-  /* margin: 20px; */
-  /* margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px; */
-
+  margin-bottom: 200px;
 }
 
+ /* individual cards */
 .card1-wrapper, .card2-wrapper, .card3-wrapper, .card4-wrapper, .card5-wrapper, .card6-wrapper, .card7-wrapper, .card8-wrapper  {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: fit-content;
   width: 23%;
+  height: 475px;
   border: 1.5px #B3B3B3 solid;
   box-shadow: 3px 3px 3px #c1c1c1;
 }
 
+/* card backgrounds */ 
+.card1-graphics-wrapper {
+  background-image: url("assets/card1-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card2-graphics-wrapper {
+  background-image: url("assets/card2-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card3-graphics-wrapper {
+  background-image: url("assets/card3-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card4-graphics-wrapper {
+  background-image: url("assets/card4-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card5-graphics-wrapper {
+  background-image: url("assets/card5-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card6-graphics-wrapper {
+  background-image: url("assets/card6-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card7-graphics-wrapper {
+  background-image: url("assets/card7-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card8-graphics-wrapper {
+  background-image: url("assets/card8-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* card header */
 .card1-graphics-wrapper, .card2-graphics-wrapper, .card3-graphics-wrapper, .card4-graphics-wrapper, .card5-graphics-wrapper, .card6-graphics-wrapper, .card7-graphics-wrapper, .card8-graphics-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-image: url("assets/card1-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 150px;
 }
 
@@ -174,6 +227,7 @@ body, html {
   width: 50px;
   margin-top: 10px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .saves-wrapper  {
@@ -190,7 +244,7 @@ body, html {
   color: #f1f1f1;
 }
 
-.saves-stats  {
+.card1-saves-stats, .card2-saves-stats, .card3-saves-stats, .card4-saves-stats, .card5-saves-stats, .card6-saves-stats, .card7-saves-stats, .card8-saves-stats  {
   margin-top: 0px;
   margin-right: 10px;
   margin-bottom: 0px;
@@ -199,3 +253,63 @@ body, html {
   color: #f1f1f1;
 }
 
+/* card content */
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.card1-name, c.ard2-name, .card3-name, .card4-name, .card5-name, .card6-name, .card7-name, .card8-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.card1-type, .card2-type, .card3-type, .card4-type, .card5-type, .card6-type, .card7-type, .card8-type {
+  margin-top: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.card1-description, .card2-description, .card3-description, .card4-description, .card5-description, .card6-description, .card7-description, .card8-description {
+  margin-top: 0px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+}
+
+.location-wrapper, .visits-wrapper {
+  margin-top: 0px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.card1-neighborhood, .card1-visits, .card2-neighborhood, .card2-visits, .card3-neighborhood, .card3-visits, .card4-neighborhood, .card-visits, .card5-neighborhood, .card5-visits, .card6-neighborhood, .card6-visits, .card7-neighborhood, .card7-visits, .card8-neighborhood, .card8-visits {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card1-address, .card2-address, .card3-address, .card4-address, .card5-address, .card6-address, .card7-address, .card8-address  {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.card1-visits-stats, .card2-visits-stats , .card3-visits-stats , .card4-visits-stats , .card5-visits-stats , .card6-visits-stats , .card7-visits-stats , .card8-visits-stats  {
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #E4002B;
+}
